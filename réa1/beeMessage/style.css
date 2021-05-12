@@ -1,0 +1,324 @@
+
+/*Body*/
+    body{
+        background-color :#fdfaff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #808080;
+        text-align: justify;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .container{
+        background-color :#fdfaff;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 2%;
+    }
+/*Animation*/
+    @keyframes animation_nav{
+        from{
+            transform:translateY(-400px);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes animation_logo{
+        from{
+            transform: scale(0);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+/*En tête*/
+    header{
+        background: linear-gradient(135deg,#FFB300 10%,#F7CD18);
+        text-align: center;
+        top: 0;
+        border: #F7CD18 10px;
+        animation: animation_nav 1s;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        animation: animation_logo 1s ease-in-out;
+    }
+    .logo > img{
+        width: 200px;
+        height: 200px;
+    }
+    h1{
+        font-family: impact, verdana;
+        color: #F7CD18;
+        text-shadow: #fdfaff  0 8px 3px;
+        font-size: 5em;
+        text-align: center;
+        margin-bottom: 0%;
+    }
+    
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    nav li{
+        margin-right: 4%;
+        height: 50px;
+    }
+    
+    nav a{
+        font-size: 1.5em;
+        padding-bottom: 3px;
+        text-decoration: none;
+        color: black;
+        text-shadow: #fdfaff 0 1px 10px;
+        font-weight: bold;
+    }
+    
+    nav a:hover{
+        color: #fdfaff;
+        border-bottom: 3px solid #fdfaff;
+        text-decoration: none;
+        animation:  animation_nav 0.5s infinite alternate;;
+    }
+
+/*Contenu*/ 
+
+h2{
+    color: #F7CD18;
+    font-size: 2em;
+    text-shadow:  #FFC337 0 1px 2px;
+}
+legend{
+    text-align: center;
+    color: #808080;
+    font-size: 15px;
+    margin-bottom: 15%;
+}
+h3{
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2, h3{
+    margin-bottom: 5%;
+}
+p{
+    margin-left: 2%;
+    margin-bottom: 5%;
+    font-size: 30px;
+}
+.image2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.image2 > img{
+    border: 2px solid #808080;
+    border-radius: 10px 10px;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+
+.article >img{
+    height: 300px;
+    width: 300px;
+}
+.contenuA{
+    display: flex;
+    flex-direction: row;
+}
+
+.download{
+    text-align: center;
+}
+
+form{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.formInscription, .formConnexion{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(135deg,#FFB300 10%,#F7CD18);
+    margin: 5% 25%;
+    border: 1px solid #F7CD18;
+    border-radius: 15px 15px;
+
+    box-shadow: 0.5px 5px #888888;
+}
+.nomprenom{
+    display: flex;
+    flex-direction: row;
+}
+.mailInscrip, .password, .confirmPassword, .buttonInscrip{
+    margin: 15px 0;
+}
+.reseauSociaux{
+    display: flex;
+    justify-content: center;
+}
+
+/*Pied de page*/
+
+
+footer nav a:hover{
+	color: #2282c2;
+	border-bottom: 3px solid #39a3e9;
+    text-decoration: none;
+}
+footer nav{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: center;
+}
+h4{
+    color: #351e04;
+    font-family: impact;
+    font-size: 3em;
+    text-shadow: #FEFFFE 0 2px 2px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+strong{
+    font-weight: bold;
+    color: #351e04;
+}
+
+
+
+
+
+
+/*Responsive*/
+
+@media only screen and (max-width: 800px){
+
+
+    #bloc_page{
+        margin-left: 0.1%;
+        margin-right: 0.1%;
+    }
+    
+    h1{
+        font-size: 2em;
+    }
+    
+    header{
+        border: #FFC337 solid 4px;
+        border-radius:  10px 10px;
+    }
+    
+    h1{
+        text-shadow: #FEFFFE 0 4px 2px;
+        margin-top: 2%;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10%;
+        margin-bottom: 2%;
+    }
+    
+    nav li{
+        margin-bottom: 2%;
+    }
+    
+    nav a{
+        font-size: 1em;
+        padding-bottom: 1px;
+    }
+    
+    section{
+        background-color: white;
+    }
+    
+    iframe{
+        width: auto;
+    }
+    
+    fieldset input{
+        width: 95%;
+    }
+    
+    .contenuA{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .images{
+        width: 300px;
+        height: 300px;
+    }
+    .imageService{
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #me{
+        width: 300px;
+        height: 300px;
+        text-align: center;
+    } 
+   #mail,#text,#textarea,#send,#reset{
+       margin: 0;
+   }
+   .form{
+       width: auto;
+       margin: 0;
+   }
+   #textarea{
+       width: 100%;
+       height: auto;
+   }
+   .formInscription{
+       width: 100%;
+       margin: 0;
+   }
+   .nomprenom{
+       display: flex;
+       flex-direction: column;
+   }
+
+   .prenom{
+       margin-bottom: 10%;
+   }
+
+   .formConnexion{
+       margin: 0;
+       width: 100%;
+   }
+   #main{
+       display: flex;
+       justify-content: space-around;
+       text-align: center;
+   }
+}
